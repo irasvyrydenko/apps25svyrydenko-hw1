@@ -152,4 +152,17 @@ public double[] findTempsInRange(double lowerBound, double upperBound) {
         
         return size;
     }
+    public double[] sortTemps() {
+        if (size == 0) {
+            return new double[0];
+        }
+        double[] copy = Arrays.copyOf(temperatureSeries, size);
+        Arrays.sort(copy);
+        return copy;
+    }
+
+    public void reset() {
+        this.temperatureSeries = new double[0];
+        this.size = 0;
+    }
 }
