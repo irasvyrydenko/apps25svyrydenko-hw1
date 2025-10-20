@@ -2,6 +2,10 @@ name: Measure code coverage
 
 on:
   pull_request:
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
 
 jobs:
   build:
