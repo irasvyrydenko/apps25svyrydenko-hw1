@@ -1,4 +1,5 @@
 package ua.edu.ucu.apps.tempseries;
+
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
